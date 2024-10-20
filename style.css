@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background-image: url("https://img.freepik.com/premium-photo/grainy-gradient-background-red-white-blue-colors-with-soft-faded-watercolor-border-texture_927344-24167.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 20px auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+.cell {
+  width: 90px;
+  height: 90px;
+  background-color: #1c1c1c;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #d20819;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #333;
+  box-shadow: 0 0 10px white;
+}
+
+#status {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  text-shadow: 0 0 8px white;
+}
+
+#restart-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #e8380c;
+  color: #1c1c1c;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 10px #e9eeee;
+}
+
+#restart-btn:hover {
+  background-color: #35e325;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #d9dbdb;
+}
